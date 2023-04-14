@@ -1,0 +1,12 @@
+# find the 98th percentile of BMI for the sample and population
+sample_98th = np.percentile(sample['BMI'], 98)
+population_98th = np.percentile(diabetes['BMI'], 98)
+
+# plot the comparison between the sample and population 98th percentiles
+fig, axs = plt.subplots(figsize=(8, 5))
+axs.bar(['Sample 98th Percentile', 'Population 98th Percentile'], [sample_98th, population_98th])
+axs.set_title('Comparison of Sample and Population 98th Percentiles of BMI')
+plt.show()
+
+Sample percentile: 40.248
+Population percentile: 47.52599999999996
